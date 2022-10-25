@@ -1,0 +1,169 @@
+/* FUENTE */
+@import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,400;0,700;1,200;1,500&display=swap');
+/* RESET  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Glory', sans-serif;
+    color: #404040;
+}
+a {
+    text-decoration: none;
+    
+}
+
+li {
+    list-style: none;
+}
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* REUTILIZABLES */
+.center {
+    text-align: center;
+}
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.align-center {
+    align-items: center;
+}
+.primary-color {
+    color: #ca2072;
+}
+.btn {
+    background-color: #ca2072;
+    color: white;
+    padding: 10px 15px;
+}
+.img-100{
+    width: 100%;
+}
+.btn-selected {
+    background-color: #ca2072;
+    border-radius: 15px;
+    padding: 5px;
+    color: white;
+}
+
+/* HEADER */
+header nav {
+    padding: 10px;
+    box-shadow: 0px 3px 10px  rgba(0, 0, 0, 0.089);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.094);
+    height: 3.5rem;
+}
+header nav .logo {
+    padding-top: 4px;
+}
+header nav ul li button{
+    display: none;
+}
+header nav button  {
+    margin-right: 20px;
+}
+header nav .menu-btn {
+    margin-right: 20px;
+}
+header nav .account-btns {
+    display: none;
+    padding-top: 5px;
+    
+}
+header nav .account-btns a button{
+    padding: 5px 10px;
+   
+}
+
+/* HERO SECTION */
+#hero {
+    padding: 10px 10px;
+    text-align: center;
+    min-width: 320px;
+    padding: 0 2rem;
+}
+
+#hero .hero-text{
+    padding: 20px 0px;
+}
+#hero .hero-text h1, #hero .hero-text p , #hero .hero-text a button {
+    margin-top: 15px;
+}
+
+#hero .hero-text h1{
+    font-size: 2.5rem;
+}
+#hero .hero-img {
+    margin: auto;
+    max-width: 15rem;
+}
+
+
+
+
+
+@media (min-width: 700px) {
+    
+    /* HEADER */
+    header nav {
+        justify-content: space-around;
+    }
+    header nav ul li button {
+        display: block;
+    }
+    header nav .menu-btn {
+        display: none;
+    }
+    header nav .account-btns {
+        display: block;
+        color: white;
+    }
+    /* HERO SECTION */
+    #hero {
+        text-align: left;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 70rem;
+        margin: auto;
+        padding-top: 3rem;
+    }
+    #hero .hero-text {
+        max-width: 520px;
+        
+    }
+    #hero .hero-text h1 {
+        font-size: 4rem;
+        font-weight: medium;
+     }
+    #hero .hero-text p {
+       width: 50%;
+    }
+    #hero .hero-img {
+        max-width: 20rem;
+    }
+}
+
+@media (min-width: 900px){
+    #hero .hero-img {
+        max-width: 30rem;
+    }
+}
