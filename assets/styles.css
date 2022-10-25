@@ -142,16 +142,21 @@ header nav .account-btns a button{
 /* ABOUT  */
 #about {
     padding: 4rem 1rem;
+    max-width: 320px;
+    margin: auto;
 }
 #about .about-img {
     max-width: 200px;
    margin: auto;
 }
 
+
 #about .about-text h2{
     font-size: 2rem;
     margin:  10px  0;
+    font-weight: 400;
 }
+
 
 
 
@@ -272,6 +277,28 @@ header nav .account-btns a button{
         width: 50%;
         margin: auto;
     }
+
+    /* ABOUT */
+    #about {
+        max-width: 700px;
+        flex-direction: row;
+    }
+    #about .about-text {
+        margin-left: 1.5rem ;
+        padding-top: 5rem;
+    }
+
+    #about .about-text h2{
+        font-size: 3rem;
+    }
+    #about .about-text p{
+        max-width: 75%;
+        margin: auto;
+       
+    }
+    #about .about-img  {
+        max-width: 500px;
+    }
 }
 
 @media (min-width: 900px){
@@ -285,5 +312,17 @@ header nav .account-btns a button{
         font-size: 2rem;
        
     }
+    #about{
+        max-width: 900px;
+    }
+    #about .about-text {
+        padding-top: 8rem;
+    }
+    #about .about-text h2{
+        font-size: 3.5rem;
+    }
 
+    #about .about-img  {
+        max-width: 900px;
+    }
 }
