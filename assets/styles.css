@@ -1,11 +1,18 @@
 /* FUENTE */
-@import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,400;0,700;1,200;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,200;0,400;0,700;1,200;1,500&display=swap');
+
 /* RESET  */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+html{
+    min-width: 320px;
+}
+
 body{
     font-family: 'Glory', sans-serif;
     color: #404040;
@@ -60,8 +67,9 @@ button {
 .btn-selected {
     background-color: #ca2072;
     border-radius: 15px;
-    padding: 5px;
+    padding: 6px 10px ;
     color: white;
+
 }
 
 /* HEADER */
@@ -97,12 +105,13 @@ header nav .account-btns a button{
 #hero {
     padding: 10px 10px;
     text-align: center;
-    min-width: 320px;
     padding: 0 2rem;
 }
 
 #hero .hero-text{
     padding: 20px 0px;
+    max-width: 350px;
+    margin: auto;
 }
 #hero .hero-text h1, #hero .hero-text p , #hero .hero-text a button {
     margin-top: 15px;
@@ -116,10 +125,106 @@ header nav .account-btns a button{
     max-width: 15rem;
 }
 
+/* QUOTE */
+.quote {
+    margin-top: 4rem;
+    padding: 2rem;
+    background-color:#e6d8f9 ;
+   
+}
+.quote h2 {
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 200;
+    font-style: italic;
+}
+
+/* ABOUT  */
+#about {
+    padding: 4rem 1rem;
+}
+#about .about-img {
+    max-width: 200px;
+   margin: auto;
+}
+
+#about .about-text h2{
+    font-size: 2rem;
+    margin:  10px  0;
+}
 
 
 
 
+/* CRUD */
+.crud{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    width: 80%;
+    height: 500px;
+    left: 10%;
+    top: 10px;
+}
+.crud h1{
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    font-size: 37px;
+}
+.crud a{
+    text-decoration: none;
+    position: absolute;
+    top: 35px;
+    right: 270px;
+    color: white;
+    background: #ca2072;
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+.crud a{
+    position:absolute;
+    right: 60px;
+    font-size: 15px;
+    top: 37px;
+}
+
+.contenido{
+    border-collapse: collapse;
+    margin: 26px 0;
+    font-size: 17px;
+    min-width: 400px;
+    position: absolute;
+    top: 80px;
+    left: 10%;
+}
+
+/* .crud button{
+    padding: 0px;
+    margin: 0px;
+} */
+.contenido thead tr{
+    color: rgb(0, 0, 0);
+    text-align: left; 
+    font-weight: 700;
+    border-bottom: 1px solid rgb(212, 212, 212);
+ }
+ 
+ .contenido th,
+ .contenido td{
+     padding: 12px 30px;
+ }
+.action-btn{
+    width: 30px;
+}
+ 
+ .contenido tbody tr{
+     border-bottom: 1px solid rgb(212, 212, 212);
+ }
+ 
+
+
+
+/* MEDIA QUERIES */
 @media (min-width: 700px) {
     
     /* HEADER */
@@ -144,7 +249,8 @@ header nav .account-btns a button{
         align-items: center;
         max-width: 70rem;
         margin: auto;
-        padding-top: 3rem;
+        padding:  5rem 20px;
+
     }
     #hero .hero-text {
         max-width: 520px;
@@ -160,10 +266,24 @@ header nav .account-btns a button{
     #hero .hero-img {
         max-width: 20rem;
     }
+    /* QUOTE */
+    .quote h2{
+        font-size: 1.5rem;
+        width: 50%;
+        margin: auto;
+    }
 }
 
 @media (min-width: 900px){
+    /* HERO SECTION */
     #hero .hero-img {
         max-width: 30rem;
     }
+
+    /* QUOTE */
+     .quote h2{
+        font-size: 2rem;
+       
+    }
+
 }

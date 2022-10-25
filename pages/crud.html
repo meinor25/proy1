@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../assets/styles.css" />
+        <title>CRUD</title>
+    </head>
+    <body>
+        <header>
+            <nav class="flex justify-around">
+                <div class="logo">
+                    <img src="../assets/img/logo.png" alt="logo" width="100px" />
+                </div>
+
+                <!-- MENU MOBILE -->
+                <button class="menu-btn">
+                    <img src="./assets/img/menu-icon.svg" alt="" width="20px" />
+                </button>
+
+                <div class="flex align-center account-btns">
+                    <a href="#">
+                        <button class="btn-selected">Login</button>
+                    </a>
+                    <a href="#">
+                        <button class="btn-selected">Register</button>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <hr />
+
+        <section class="crud">
+            <h1>Consultas</h1>
+            <a href="#" class="boton">Añadir nueva consulta</a>
+            <table class="contenido">
+                <thead>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>Nombre (Mascota)</td>
+                        <td>Fecha de consulta</td>
+                        <td>Motivo</td>
+                        <td>Acciones</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan</td>
+                        <td>Mascota1</td>
+                        <td>9/10/2022</td>
+                        <td>Vacunación</td>
+                        <td>
+                            <button type="button" class="action-btn">
+                                <img class="img-100" src="../assets/img/edit.png" />
+                            </button>
+                            <button type="button" class="action-btn">
+                                <img class="img-100" src="../assets/img/delete.png" />
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Juan</td>
+                        <td>Mascota2</td>
+                        <td>9/10/2022</td>
+                        <td>Vacunación</td>
+                        <td>
+                            <button type="button" class="action-btn">
+                                <img class="img-100" src="../assets/img/edit.png" />
+                            </button>
+                            <button type="button" class="action-btn">
+                                <img class="img-100" src="../assets/img/delete.png" />
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Juan</td>
+                        <td>Mascota3</td>
+                        <td>9/10/2022</td>
+                        <td>Vacunación</td>
+                        <td>
+                            <button type="button" class="action-btn">
+                                <img class="img-100" src="../assets/img/edit.png" />
+                            </button>
+                            <button type="button" class="action-btn">
+                                <img class="img-100" src="../assets/img/delete.png" />
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </body>
+</html>
