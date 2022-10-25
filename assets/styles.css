@@ -7,6 +7,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html{
@@ -226,7 +227,105 @@ header nav .account-btns a button{
      border-bottom: 1px solid rgb(212, 212, 212);
  }
  
+/* SERVICIOS */
+#servicios .services-title {
+    background-color: #efbcd5;
+    padding: 1.5rem;
+    font-weight: 400;
+}
 
+#servicios .services-description {
+    padding: 2rem;
+    max-width: 320px;
+    margin: auto;
+}
+.cards {
+    padding: 0px 2rem;
+}
+.cards .card {
+    margin-bottom: 2rem;
+}
+.card {
+    margin: auto;
+    max-width: 300px;
+    height: 400px;
+    box-shadow: 0px 3px 10px  rgba(0, 0, 0, 0.267);
+    border-radius: 20px 20px 10px 10px;
+}
+
+.card h3 {
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: 1rem;
+
+}
+
+.card  p{
+    width: 75%;
+    margin: 1rem auto;
+}
+
+#contacto {
+    background-color: #e6d8f9;
+    padding: 1rem;
+}
+#contacto .contact-title {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+#contacto .form {
+    background-color:#f2ebfc ;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+#contacto .form h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600
+}
+#contacto .form form  {
+   
+    margin-left: 1.5rem;
+
+}
+#contacto .form form input, #contacto .form form textarea {
+    width: 90%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ca2072;
+    padding: .5rem 0;
+    margin-bottom: 1rem;
+}
+#contacto .form form textarea{
+    resize: none;
+}
+#contacto .form form input::placeholder, #contacto .form form textarea::placeholder {
+    font-size: .7rem;
+    color: #404040;
+}
+#contacto .contact-cards .sucursales {
+    max-width: 400px;
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: #d775b0;
+    border-radius: 10px ;
+    font-weight: 600;
+}
+#contacto .contact-cards .sucursales h4 {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+#contacto .contact-cards .sucursales p {
+    margin-bottom: 1rem;
+    font-size: .8rem;
+}
+#contacto .contact-cards .sucursales p span {
+    color: white;
+}
 
 
 /* MEDIA QUERIES */
@@ -267,6 +366,7 @@ header nav .account-btns a button{
      }
     #hero .hero-text p {
        width: 50%;
+       font-size: 1.2rem;
     }
     #hero .hero-img {
         max-width: 20rem;
@@ -294,11 +394,79 @@ header nav .account-btns a button{
     #about .about-text p{
         max-width: 75%;
         margin: auto;
+        font-size: 1.2rem;
        
     }
     #about .about-img  {
         max-width: 500px;
     }
+
+    /* SERVICIOS */
+    #servicios {
+        margin-bottom: 6rem;
+    }
+    .services-title {
+        font-size: 2rem;
+    }
+    .cards {
+        flex-direction: row;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+    .card {
+        max-width: 400px;
+        margin: auto;
+    }
+    
+    .cards .card {
+        margin-bottom: 0 ;
+        margin: 0 10px;
+    }
+    .services-description {
+        font-size: 1.2rem;
+        max-width: 600px;
+    }
+
+    /* CONTACTO */
+    #contacto {
+        height: 68vh ;
+    }
+    #contacto .contact-title {
+        font-size: 4rem;
+    }
+    #contacto .contact-cards {
+        flex-direction: row;
+        justify-content: center;
+        max-width: 990px;
+        margin: auto;
+    }
+    #contacto .contact-cards .form h4{
+        font-size: 2rem;
+    }
+    #contacto .contact-cards .sucursales {
+        margin-top: 0;
+        margin-left: 1rem;
+        margin-bottom: 0;
+        max-width: 500px;
+        height: 347px;
+    }
+    #contacto .contact-cards .sucursales p {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    #contacto .contact-cards .sucursales span{
+        font-weight: 600;
+    }
+}
+footer {
+    background-color: #553513;
+    padding: 3rem;
+    color: white;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 @media (min-width: 900px){
@@ -324,5 +492,19 @@ header nav .account-btns a button{
 
     #about .about-img  {
         max-width: 900px;
+    }
+
+    /* SERVICIOS */
+
+
+    .card{
+        height: 500px;
+    }
+    .services-title {
+        font-size: 3rem;
+    }
+    .card p {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
     }
 }
