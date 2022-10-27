@@ -167,15 +167,16 @@ header nav #nav-logo-user{
 }
 
 .main-container{
+    position: relative;
     width: 100%;
-    height: 900px;
+    height: 740px;
 }
 
 .main-container h3#title-info{
     position: absolute;
     width: 352px;
     height: 52px;
-    top:115px;
+    top:4px;
     left:95px;
     font-size: 25px;
     line-height: 58px;
@@ -183,23 +184,23 @@ header nav #nav-logo-user{
 .main-container img#logo-user{
     position: absolute;
     left: 95px;
-    top:168px
+    top:50px
 }
 .main-container p#text-upload{
     position: absolute;
     left: 100px;
-    top:350px;
+    top:220px;
     font-size:18px;
     font-weight: 400px;
 }
 .main-container img#subir-imagen{
     position: absolute;
-    left:200px;
-    top: 340px;
+    left:210px;
+    top: 210px;
 }
 .container-dates{
     display:flex;
-    margin: 80px 390px;
+    margin: 30px 390px;
     width: 800px;
     height: 200px;
     background-color:#f891c5;
