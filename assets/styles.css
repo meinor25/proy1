@@ -76,6 +76,7 @@ button {
 /* HEADER */
 header nav {
     padding: 10px;
+    background-color: white;
     box-shadow: 0px 3px 10px  rgba(0, 0, 0, 0.089);
     border-bottom: 1px solid rgba(0, 0, 0, 0.094);
     height: 3.5rem;
@@ -104,9 +105,8 @@ header nav .account-btns a button{
 
 /* HERO SECTION */
 #hero {
-    padding: 10px 10px;
     text-align: center;
-    padding: 0 2rem;
+    padding: 0  2rem;
 }
 
 #hero .hero-text{
@@ -287,7 +287,6 @@ header nav #nav-logo-user{
 /* CRUD */
 .crud{
     position: relative;
-    background-color: rgb(252, 252, 252);
     width: 80%;
     height: 500px;
     left: 10%;
@@ -450,17 +449,15 @@ header nav #nav-logo-user{
 }
 
 /* LOGIN */
+
+
 .login-box {
     width: 220px;
-    height: 300px;
     background:#F9DB9B;
     color: black;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem auto 12.3rem auto ;
     text-align: center;
 
   }
@@ -478,7 +475,7 @@ header nav #nav-logo-user{
     margin: 0;
     padding: 0 0 20px;
     text-align: center;
-    font-size: 10px;
+    font-size: 1.2rem;
     
   }
   
@@ -492,6 +489,7 @@ header nav #nav-logo-user{
   .login-box input {
     width: 100%;
     margin-bottom: 20px;
+    padding: 10px;
   }
   
   .login-box input[type="text"], .login-box input[type="password"] {
@@ -506,7 +504,6 @@ header nav #nav-logo-user{
   .login-box input[type="submit"] {
     border: none;
     outline: none;
-    height: 20px;
     background: #BE701D;
     color: #fff;
     font-size: 10px;
@@ -576,19 +573,7 @@ header nav #nav-logo-user{
   font-family: inherit;
   display: inline-block;
 }
-.footer-login {
-  position: absolute;
-  height: 14.72%;
-  width: 100%;
-  top: 85.28%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-  font-size: 27.19px;
-  color: #fff;
-  font-family: Poppins;
-}
+
 .cajita-article {
   right: 0;
   bottom: 0;
@@ -1100,6 +1085,8 @@ footer h5 {
         font-size: 2rem;
        
     }
+
+    /* ABOUT */
     #about{
         max-width: 900px;
     }
