@@ -7,6 +7,9 @@ public class Usuario {
     private String cedula;
     private String apellido;
     private String password;
+    private String nombre_mascota;
+    private String fecha_consulta;
+    private String motivo_consulta;
 
     public Usuario(String correo, String nombre, String direccion, String cedula, String apellido, String password) {
         this.correo = correo;
@@ -23,6 +26,37 @@ public class Usuario {
     }
 
     public Usuario() {
+    }
+
+    public Usuario(String nombre_mascota, String fecha_consulta, String motivo_consulta, String nombre) {
+        this.nombre = nombre;
+        this.nombre_mascota = nombre_mascota;
+        this.fecha_consulta = fecha_consulta;
+        this.motivo_consulta = motivo_consulta;
+    }
+
+    public String getNombre_mascota() {
+        return nombre_mascota;
+    }
+
+    public void setNombre_mascota(String nombre_mascota) {
+        this.nombre_mascota = nombre_mascota;
+    }
+
+    public String getFecha_consulta() {
+        return fecha_consulta;
+    }
+
+    public void setFecha_consulta(String fecha_consulta) {
+        this.fecha_consulta = fecha_consulta;
+    }
+
+    public String getMotivo_consulta() {
+        return motivo_consulta;
+    }
+
+    public void setMotivo_consulta(String motivo_consulta) {
+        this.motivo_consulta = motivo_consulta;
     }
 
     public String getDireccion() {

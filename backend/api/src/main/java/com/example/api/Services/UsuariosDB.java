@@ -15,6 +15,7 @@ public class UsuariosDB {
         _cn = new ConexionDB().Connect();
     }
 
+    // Trae informacion segun credenciales
     public List<Usuario> Login(Usuario crendentialUsuario) {
         try {
             Statement stmt = _cn.createStatement();
@@ -23,14 +24,15 @@ public class UsuariosDB {
 
             List<Usuario> usuarioLogeado = new ArrayList<>();
             ResultSet result = stmt.executeQuery(query);
-            if (result.next()) {
-                while (result.next()) {
-                    Usuario usuario = new Usuario(result.getString("correo"), result.getString("password"));
 
-                    usuarioLogeado.add(usuario);
-                }
+            while (result.next()) {
+                Usuario usuario = new Usuario(result.getString("correo"), result.getString("Primer_nombre"),
+                        result.getString("direccion"), result.getString("Cedula_cliente"), result.getString("apellido"),
+                        result.getString("password"));
 
+                usuarioLogeado.add(usuario);
             }
+
             result.close();
             stmt.close();
             return usuarioLogeado;
@@ -40,6 +42,7 @@ public class UsuariosDB {
         return null;
     }
 
+    // Registra un nuevo usuario
     public int Register(Usuario crendentialUsuario) {
         int result = 0;
         try {
@@ -59,4 +62,76 @@ public class UsuariosDB {
         }
         return result;
     }
+
+    // Encontrar usuario por cedula
+    public List<Usuario> GetUserByID(String id) {
+        try {
+            Statement stmt = _cn.createStatement();
+            String query = "select * from cliente where Cedula_cliente = '" + id + "'";
+
+            List<Usuario> usuarioEncontrado = new ArrayList<>();
+            ResultSet result = stmt.executeQuery(query);
+
+            while (result.next()) {
+                Usuario usuario = new Usuario(result.getString("correo"), result.getString("Primer_nombre"),
+                        result.getString("direccion"), result.getString("Cedula_cliente"), result.getString("apellido"),
+                        result.getString("password"));
+
+                usuarioEncontrado.add(usuario);
+            }
+            result.close();
+            stmt.close();
+            return usuarioEncontrado;
+        } catch (Exception e) {
+            System.out.println("Error" + e);
+        }
+        return null;
+    }
+
+    public List<Usuario> GetUserByName(String name) {
+        try {
+            Statement stmt = _cn.createStatement();
+            String query = "exec p_get_consultas_name '" + name + "'";
+
+            List<Usuario> consultas = new ArrayList<>();
+            ResultSet result = stmt.executeQuery(query);
+
+            while (result.next()) {
+                Usuario consulta = new Usuario(result.getString("nombre"), result.getString("fecha_consulta"),
+                        result.getString("Nombre"), result.getString("Primer_nombre"));
+
+                consultas.add(consulta);
+            }
+            result.close();
+            stmt.close();
+            return consultas;
+        } catch (Exception e) {
+            System.out.println("Error" + e);
+        }
+        return null;
+    }
+
+    public List<Usuario> GetConsultas() {
+        try {
+            Statement stmt = _cn.createStatement();
+            String query = "exec p_get_consultas";
+
+            List<Usuario> consultas = new ArrayList<>();
+            ResultSet result = stmt.executeQuery(query);
+
+            while (result.next()) {
+                Usuario consulta = new Usuario(result.getString("nombre"), result.getString("fecha_consulta"),
+                        result.getString("Nombre"), result.getString("Primer_nombre"));
+
+                consultas.add(consulta);
+            }
+            result.close();
+            stmt.close();
+            return consultas;
+        } catch (Exception e) {
+            System.out.println("Error" + e);
+        }
+        return null;
+    }
+
 }
