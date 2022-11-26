@@ -15,24 +15,48 @@ public class UsuariosDB {
         _cn = new ConexionDB().Connect();
     }
 
-    public List<Usuario> ObtenerUsuario() {
+    public List<Usuario> Login(Usuario crendentialUsuario) {
         try {
             Statement stmt = _cn.createStatement();
-            String query = "Select * from Cliente";
+            String query = "exec p_user_credentials '" + crendentialUsuario.getCorreo() + "', '"
+                    + crendentialUsuario.getPassword() + "'";
 
-            List<Usuario> usuarios = new ArrayList<>();
+            List<Usuario> usuarioLogeado = new ArrayList<>();
             ResultSet result = stmt.executeQuery(query);
-            while (result.next()) {
-                Usuario usuario = new Usuario(result.getString("correo"), result.getString("password"));
+            if (result.next()) {
+                while (result.next()) {
+                    Usuario usuario = new Usuario(result.getString("correo"), result.getString("password"));
 
-                usuarios.add(usuario);
+                    usuarioLogeado.add(usuario);
+                }
+
             }
             result.close();
             stmt.close();
-            return usuarios;
+            return usuarioLogeado;
         } catch (Exception e) {
             System.out.println("Error" + e);
         }
         return null;
+    }
+
+    public int Register(Usuario crendentialUsuario) {
+        int result = 0;
+        try {
+            Statement stmt = _cn.createStatement();
+            String query = "exec p_user_register '"
+                    + crendentialUsuario.getCedula() + "', '"
+                    + crendentialUsuario.getPassword() + "', '"
+                    + crendentialUsuario.getCorreo() + "', '"
+                    + crendentialUsuario.getNombre() + "', '"
+                    + crendentialUsuario.getDireccion() + "', '"
+                    + crendentialUsuario.getApellido() + "'";
+            result = stmt.executeUpdate(query);
+            return result;
+
+        } catch (Exception e) {
+            System.out.println("Error" + e);
+        }
+        return result;
     }
 }
