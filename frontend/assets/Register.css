@@ -1,0 +1,289 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+.fondo-login-1-icon1 {
+  position: absolute;
+  margin: 0 !important;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.nelo-logo-icon1 {
+  position: relative;
+  width: 300px;
+  height: 102.17px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.login-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  font-family: var(--font-glory);
+  color: var(--color-gray-100);
+  text-align: center;
+  display: inline-block;
+}
+.login-button:active {
+  color: var(--color-gray-300);
+}
+.regitrarse-button-div1 {
+  border-radius: var(--br-lg);
+  background-color: var(--color-purple);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-4xs) var(--padding-sm);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+.buttoncont-div1 {
+  flex: 1;
+  justify-content: center;
+  gap: 20px;
+}
+.buttoncont-div1,
+.headerbutton-div1,
+.headercont-div1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.headerbutton-div1 {
+  width: 357px;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.headercont-div1 {
+  flex: 1;
+  justify-content: space-between;
+}
+.header1,
+.registrarse-h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header1 {
+  align-self: stretch;
+  background-color: var(--color-white);
+  height: 150px;
+  flex-shrink: 0;
+  flex-direction: row;
+  padding: var(--padding-md) var(--padding-3xl);
+  box-sizing: border-box;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background: #fff;
+  z-index: 1;
+}
+.registrarse-h2 {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-lg);
+  letter-spacing: 0.15px;
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: var(--color-gray-200);
+  text-align: center;
+  outline: 0;
+}
+.registrarse-div {
+  align-self: stretch;
+  border-radius: var(--br-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-xs) var(--padding-2xs);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+}
+.nombre-input {
+  border: 0;
+  background-color: transparent;
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.15px;
+  font-family: var(--font-poppins);
+  color: var(--color-gray-200);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  outline: 0;
+}
+.nombre-div,
+.rectangle-input {
+  background-color: var(--color-gray-100);
+}
+.nombre-div {
+  align-self: stretch;
+  border-radius: var(--br-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-xs) var(--padding-2xs);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+}
+.rectangle-input {
+  cursor: pointer;
+  position: relative;
+  border-radius: 2px;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.terminos-div {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  font-size: 13.56px;
+  letter-spacing: 0.15px;
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--color-gray-300);
+  text-align: center;
+  justify-content: center;
+}
+.frame-div,
+.registrarse-div1,
+.terminos-div {
+  display: flex;
+  align-items: center;
+}
+.frame-div {
+  align-self: stretch;
+  flex-direction: row;
+  padding: var(--padding-xs) var(--padding-2xs);
+  box-sizing: border-box;
+  justify-content: flex-start;
+  gap: 6px;
+}
+.registrarse-div1 {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.15px;
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--color-gray-100);
+  text-align: center;
+  justify-content: center;
+}
+.registrarse-button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) var(--padding-2xs);
+  background-color: var(--color-orange);
+  border-radius: var(--br-md);
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.registrarse-button:active {
+  background-color: var(--color-purple);
+}
+.form1,
+.formcont-div1,
+.registrarse-button,
+.sectioncont1 {
+  align-self: stretch;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+}
+.form1 {
+  flex: 1;
+  border-radius: var(--br-sm);
+  background-color: var(--color-tan);
+  flex-direction: column;
+  padding: var(--padding-3xs) var(--padding-sm);
+  justify-content: space-between;
+}
+.formcont-div1,
+.sectioncont1 {
+  flex-direction: row;
+  justify-content: center;
+}
+.formcont-div1 {
+  flex: 1;
+  padding: 0 var(--padding-4xl);
+}
+.sectioncont1 {
+  height: 722px;
+  flex-shrink: 0;
+  padding: var(--padding-md) var(--padding-3xl);
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+.todos-los-derechos-reservados1 {
+  flex: 1;
+  position: relative;
+  outline: 0;
+}
+.footer1,
+.register-div,
+.todos-los-derechos-reservados1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer1 {
+  align-self: stretch;
+  background-color: var(--color-gray-400);
+  height: 150px;
+  flex-shrink: 0;
+  flex-direction: row;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  z-index: 3;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-gray-100);
+  font-family: var(--font-poppins);
+}
+.register-div {
+  position: relative;
+  border-radius: var(--br-sm);
+  width: 100%;
+  height: 1080px;
+  flex-direction: column;
+  gap: var(--gap-md);
+}
+@media screen and (max-width: 1200px) {
+  .header1 {
+    padding-left: var(--padding-2xl);
+    padding-right: var(--padding-2xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 768px) {
+  .buttoncont-div1 {
+    display: none;
+  }
+  .header1 {
+    padding-left: var(--padding-lg);
+    padding-right: var(--padding-lg);
+    box-sizing: border-box;
+  }
+}

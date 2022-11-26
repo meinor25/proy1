@@ -5,100 +5,120 @@
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <title></title>
     <meta name="description" content="" />
-    <link rel="stylesheet" href="../assets/styles.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
-    />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./Register.css" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Glory:wght@700&display=swap"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    />
   </head>
   <body>
-    <header>
-      <nav class="flex justify-around">
-          <div class="logo">
-              <img src="../assets/img/logo.png" alt="logo" width="100px" />
+    <div class="register-div">
+      <img
+        class="fondo-login-1-icon1"
+        alt=""
+        src="public/fondo-login-1@2x.png"
+      />
+      <header class="header1">
+        <div class="headercont-div1">
+          <img class="nelo-logo-icon1" alt="" src="public/nelo-logo@2x.png" />
+          <div class="headerbutton-div1">
+            <div class="buttoncont-div1">
+              <div class="regitrarse-button-div1">
+                <button class="login-button">Login</button>
+              </div>
+              <div class="regitrarse-button-div1">
+                <button class="login-button">Home</button>
+              </div>
+            </div>
           </div>
-          <!-- MENU PANTALLAS MEDIAS HACIA ADELANTE -->
-          <ul class="flex align-center">
-              <li>
-                  <a href="../index.html">
-                      <button class="btn-selected">Home</button>
-                  </a>
-              </li>
-              <li>
-                  <a href="#about">
-                      <button>Acerca de</button>
-                  </a>
-              </li>
-              <li>
-                  <a href="#contacto">
-                      <button>Contacto</button>
-                  </a>
-              </li>
-              <li>
-                  <a href="#">
-                      <button>Ranking</button>
-                  </a>
-              </li>
-              <li>
-                  <a href="#">
-                      <button>Reportes</button>
-                  </a>
-              </li>
-          </ul>
-          <!-- MENU MOBILE -->
-          <button class="menu-btn">
-              <img src="./assets/img/menu-icon.svg" alt="" width="20px" />
-          </button>
-
-          <div class="flex align-center account-btns">
-              <a href="./login.html">
-                  <button class="btn-selected">Login</button>
-              </a>
-          </div>
-      </nav>
-  </header>
-    <!-- <header class="navbar-header">
-      <div class="header-div"></div>
-      <img class="nelo-logo-icon" alt="" src="../assets/img/logo.png" />
-      <div class="menu-div">
-        <button class="home-button">
-          <div class="home-rectangle-div"></div>
-          <h1 class="home-h1">Home</h1></button
-        ><button class="home-button">
-          <div class="login-rectangle-div"></div>
-          <h1 class="login-h1">Login</h1>
-        </button>
-      </div>
-    </header> -->
-    <div class="frame-div">
-      <form class="signup-menu-form">
-        <article class="cajita-article"></article>
-        <button class="botones-button">
-          <div class="boton-r-div"></div>
-          <h2 class="registrarse-h2">Registrarse</h2></button
-        ><input class="checkboxchecked-checkbox-onl" type="checkbox" required />
-        <h3 class="terminos-h3">Acepto los terminos y condiciones</h3>
-        <div class="confirmar-contrasea-div">
-          <input class="input" type="password" />
         </div>
-        <div class="contrasea-div"><input class="input" type="password" /></div>
-        <div class="email-div"><input class="input2" type="email" /></div>
-        <div class="usuario-div"><input class="input3" type="text" /></div>
-        <h2 class="confirmar-contrasea-h2">Confirmar contraseña</h2>
-        <h2 class="contrasea-h2">Contraseña</h2>
-        <h2 class="email-h2">Email</h2>
-        <h2 class="usuario-h2">Usuario</h2>
-        <h1 class="registrarse-h1">Registrarse</h1>
-      </form>
+      </header>
+      <section class="sectioncont1">
+        <div class="formcont-div1">
+          <form class="form1">
+            <div class="registrarse-div">
+              <h2 class="registrarse-h2">Registrarse</h2>
+            </div>
+            <div class="nombre-div">
+              <input
+                class="nombre-input"
+                type="text"
+                placeholder="Nombre"
+                required
+              />
+            </div>
+            <div class="nombre-div">
+              <input
+                class="nombre-input"
+                type="text"
+                placeholder="Apellido"
+                required
+              />
+            </div>
+            <div class="nombre-div">
+              <input
+                class="nombre-input"
+                type="number"
+                placeholder="Cedula"
+                required
+              />
+            </div>
+            <div class="nombre-div">
+              <input
+                class="nombre-input"
+                type="text"
+                placeholder="Direción"
+                required
+              />
+            </div>
+            <div class="nombre-div">
+              <input
+                class="nombre-input"
+                type="text"
+                placeholder="Correo"
+                required
+              />
+            </div>
+            <div class="nombre-div">
+              <input
+                class="nombre-input"
+                type="password"
+                placeholder="Contraseña"
+                required
+              />
+            </div>
+            <div class="nombre-div">
+              <input
+                class="nombre-input"
+                type="password"
+                placeholder="Confirmar Contraseña"
+                required
+              />
+            </div>
+            <div class="frame-div">
+              <input class="rectangle-input" type="checkbox" required />
+              <div class="terminos-div">Acepto los terminos y condiciones</div>
+            </div>
+            <button class="registrarse-button">
+              <div class="registrarse-div1">Registrarse</div>
+            </button>
+          </form>
+        </div>
+      </section>
+      <footer class="footer1">
+        <div class="todos-los-derechos-reservados1">
+          Todos los derechos reservados
+        </div>
+      </footer>
     </div>
-    <footer>
-      <h5 class="center">Todos los derechos reservados</h5>
-  </footer>
 
+    <script></script>
   </body>
 </html>

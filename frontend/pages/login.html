@@ -1,46 +1,80 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="../assets/styles.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title></title>
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./login.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Glory:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    />
   </head>
   <body>
-    <body>
-        <header>
-            <nav class="flex justify-around">
-                <div class="logo">
-                    <img src="../assets/img/logo.png" alt="logo" width="100px" />
-                </div>
-                <!-- MENU MOBILE -->
-                <div class="flex align-center account-btns">
-                    <a href="../index.html">
-                        <button class="btn-selected">Home</button>
-                    </a>
-                    <a href="./registrarse.html">
-                        <button class="btn-selected">Register</button>
-                    </a>
-                </div>
-            </nav>
-        </header>
-
- <section id="login">
-    <div class="login-box">
-      <h1>Iniciar Sesion </h1>
-      <form>
-        <!-- USERNAME INPUT -->
-        <label for="email">Correo electronico</label>
-        <input type="text" placeholder="email">
-        <label for="password">Contraseña</label>
-        <input type="password" placeholder="password">
-        <input type="submit" value="Iniciar">
-        <input type="submit" value="register">
-      </form>
+    <div class="login-div">
+      <img
+        class="fondo-login-1-icon"
+        alt=""
+        src="public/fondo-login-1@2x.png"
+      />
+      <header class="header">
+        <div class="headercont-div">
+          <img class="nelo-logo-icon" alt="" src="public/nelo-logo@2x.png" />
+          <div class="headerbutton-div">
+            <div class="buttoncont-div">
+              <div class="regitrarse-button-div">
+                <button class="regitrarse-button">Regitrarse</button>
+              </div>
+              <div class="regitrarse-button-div">
+                <button class="regitrarse-button">Home</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="sectioncont">
+        <div class="formcont-div">
+          <form class="form">
+            <div class="iniciar-session-div">
+              <h2 class="inciair-session-h2">Inciair Session</h2>
+            </div>
+            <div class="correo-div">
+              <input
+                class="correo-input"
+                type="text"
+                placeholder="Correo"
+                required
+              />
+            </div>
+            <div class="correo-div">
+              <input
+                class="correo-input"
+                type="password"
+                placeholder="Contraseña"
+                required
+              />
+            </div>
+            <button class="iniciar-session-button">
+              <div class="iniciar-session-div1">Iniciar Session</div>
+            </button>
+          </form>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="todos-los-derechos-reservados">
+          Todos los derechos reservados
+        </div>
+      </footer>
     </div>
-</section>
-<footer>
-  <h5 class="center">Todos los derechos reservados</h5>
-</footer>
-</footer>
+
+    <script></script>
   </body>
 </html>
