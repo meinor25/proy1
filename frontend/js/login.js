@@ -1,14 +1,13 @@
 const form = document.querySelector("#form");
-const input1 = document.querySelector("#correo");
-const input2 = document.querySelector("#password");
+const correo = document.querySelector("#correo");
+const password = document.querySelector("#password");
 let dataArray = [];
 
 form.addEventListener("submit", function (e) {
-    console.log(input1.value, input2.value);
     e.preventDefault();
     let body = {
-        correo: input1.value,
-        password: input2.value,
+        correo: correo.value,
+        password: password.value,
     };
 
     fetch("http://localhost:8080/login", {
