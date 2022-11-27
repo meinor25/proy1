@@ -1,80 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <title></title>
-    <meta name="description" content="" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <title></title>
+        <meta name="description" content="" />
 
-    <link rel="stylesheet" href="../assets/global.css">
-    <link rel="stylesheet" href="../assets/login.css">
+        <link rel="stylesheet" href="../assets/global.css" />
+        <link rel="stylesheet" href="../assets/login.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Glory:wght@700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-    />
-  </head>
-  <body>
-    <div class="login-div">
-      <img
-        class="fondo-login-1-icon"
-        alt=""
-        src="../assets/img/fondo-login-1@2x.png"
-      />
-      <header class="header">
-        <div class="headercont-div">
-          <img class="nelo-logo-icon" alt="" src="../assets/img/nelo-logo@2x.png" />
-          <div class="headerbutton-div">
-            <div class="buttoncont-div">
-              <div class="regitrarse-button-div">
-                <button class="regitrarse-button">Regitrarse</button>
-              </div>
-              <div class="regitrarse-button-div">
-                <button class="regitrarse-button">Home</button>
-              </div>
-            </div>
-          </div>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Glory:wght@700&display=swap"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+        />
+    </head>
+    <body>
+        <div class="login-div">
+            <img
+                class="fondo-login-1-icon"
+                alt=""
+                src="../assets/img/fondo-login-1@2x.png"
+            />
+            <header class="header">
+                <div class="headercont-div">
+                    <img
+                        class="nelo-logo-icon"
+                        alt=""
+                        src="../assets/img/nelo-logo@2x.png"
+                    />
+                    <div class="headerbutton-div">
+                        <div class="buttoncont-div">
+                            <div class="regitrarse-button-div">
+                                <button class="regitrarse-button">Regitrarse</button>
+                            </div>
+                            <div class="regitrarse-button-div">
+                                <button class="regitrarse-button">Home</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="sectioncont">
+                <div class="formcont-div">
+                    <form class="form" method="post" id="form">
+                        <div class="iniciar-session-div">
+                            <h2 class="inciair-session-h2">Iniciar Sesion</h2>
+                        </div>
+                        <div class="correo-div">
+                            <input
+                                class="correo-input"
+                                type="text"
+                                placeholder="Correo"
+                                required
+                                id="correo"
+                            />
+                        </div>
+                        <div class="correo-div">
+                            <input
+                                class="correo-input"
+                                type="password"
+                                placeholder="Contraseña"
+                                required
+                                id="password"
+                            />
+                        </div>
+                        <button class="iniciar-session-button" type="submit">
+                            <div class="iniciar-session-div1">Iniciar Sesion</div>
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="todos-los-derechos-reservados">
+                    Todos los derechos reservados
+                </div>
+            </footer>
         </div>
-      </header>
-      <section class="sectioncont">
-        <div class="formcont-div">
-          <form class="form">
-            <div class="iniciar-session-div">
-              <h2 class="inciair-session-h2">Iniciar Sesion</h2>
-            </div>
-            <div class="correo-div">
-              <input
-                class="correo-input"
-                type="text"
-                placeholder="Correo"
-                required
-              />
-            </div>
-            <div class="correo-div">
-              <input
-                class="correo-input"
-                type="password"
-                placeholder="Contraseña"
-                required
-              />
-            </div>
-            <button class="iniciar-session-button">
-              <div class="iniciar-session-div1">Iniciar Sesion</div>
-            </button>
-          </form>
-        </div>
-      </section>
-      <footer class="footer">
-        <div class="todos-los-derechos-reservados">
-          Todos los derechos reservados
-        </div>
-      </footer>
-    </div>
 
-    <script></script>
-  </body>
+        <script src="../js/login.js"></script>
+    </body>
 </html>
