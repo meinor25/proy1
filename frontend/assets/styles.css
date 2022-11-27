@@ -194,37 +194,16 @@ header nav #nav-logo-user {
     top: 210px;
 }
 .container-dates {
-    display: flex;
     margin: 30px 390px;
     width: 800px;
     height: 200px;
+    padding: 3rem;
     background-color: #f891c5;
     border-radius: 15px;
 }
-.container-dates h2#datos-generales {
-    width: 382px;
-    height: 58px;
-    color: black;
-    margin: 30px 20px;
+.container-dates p {
+    margin-top: 4px;
 }
-.container-dates p#dato1 {
-    font-size: 18px;
-    color: black;
-    margin: 70px -400px;
-}
-
-.container-dates p#dato2 {
-    font-size: 18px;
-    color: black;
-    margin: 100px 220px;
-}
-
-.container-dates p#dato3 {
-    font-size: 18px;
-    color: black;
-    margin: 130px -315px;
-}
-
 .container-edit-date {
     display: flex;
     margin: 80px 390px;
