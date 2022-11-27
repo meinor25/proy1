@@ -88,11 +88,10 @@ public class UsuariosDB {
         return null;
     }
 
-    public List<Usuario> GetUserByName(String name) {
+    public List<Usuario> GetUserByName(Usuario name) {
         try {
             Statement stmt = _cn.createStatement();
-            String query = "exec p_get_consultas_name '" + name + "'";
-
+            String query = "exec p_get_consultas_name '" + name.getNombre() + "'";
             List<Usuario> consultas = new ArrayList<>();
             ResultSet result = stmt.executeQuery(query);
 

@@ -11,6 +11,10 @@ public class Usuario {
     private String fecha_consulta;
     private String motivo_consulta;
 
+    public Usuario(String nombre) {
+        this.nombre = nombre;
+    }
+
     public Usuario(String correo, String nombre, String direccion, String cedula, String apellido, String password) {
         this.correo = correo;
         this.nombre = nombre;
