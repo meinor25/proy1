@@ -1,61 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/styles.css">
-    <title>Profile</title>
-</head>
-<body>
-    <header>
-        <nav class="flex justify-around">
-            <div class="logo">
-                <img src="../assets/img/logo.png" alt="logo" width="100px">
-            </div>
-            <ul class="flex align-center">
-                <li>
-                    <a href="#">
-                        <button class="btn-selected">Home</button>
-                    </a>
-                </li>
-                <li>
-                    <img id="nav-logo-user" src="../assets/img/usuario.png" alt="usuario" width="30px">
-                </li>
-                <li>
-                    <a href="#">
-                        <button class="btn-selected">Nombre</button>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../assets/styles.css" />
+        <title>Profile</title>
+    </head>
+    <body>
+        <header>
+            <nav class="flex justify-around">
+                <div class="logo">
+                    <img src="../assets/img/logo.png" alt="logo" width="100px" />
+                </div>
+                <ul class="flex align-center">
+                    <li>
+                        <a href="../index.html">
+                            <button class="btn-selected">Home</button>
+                        </a>
+                    </li>
+                    <li>
+                        <img
+                            id="nav-logo-user"
+                            src="../assets/img/usuario.png"
+                            alt="usuario"
+                            width="30px"
+                        />
+                    </li>
+                    <li>
+                        <a href="#">
+                            <button class="btn-selected">Nombre</button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <div class="main-container">
             <h3 id="title-info">Tu Información</h3>
-            <img id="logo-user" src="../assets/img/usuario.png" alt="usuario" width="150px">
+            <img
+                id="logo-user"
+                src="../assets/img/usuario.png"
+                alt="usuario"
+                width="150px"
+            />
             <p id="text-upload">Subir Imagen</p>
-            <img id="subir-imagen" src="../assets/img/upload.png" alt="subir imagen" width="40px">
-            <div class="container-dates">
-                <h2 id="datos-generales">Datos Generales</h2>
-                <p id="dato1"><strong>Nombre:</strong> Nombre Apellido </p>
-                <p id="dato2"><strong>Usuario:</strong> User </p>
-                <p id="dato3"><strong>Email:</strong> usuario@gmail.com </p>
-            </div>
+            <img
+                id="subir-imagen"
+                src="../assets/img/upload.png"
+                alt="subir imagen"
+                width="40px"
+            />
+            <div class="container-dates" id="datos"></div>
             <div class="container-edit-date">
                 <h2 id="edit-info">Editar Información</h2>
                 <form class="dates-f">
                     <label for="Telefono">Teléfono</label>
-                    <input type="tel" id="Telefono" name="Telefono">
-                    <br>
+                    <input type="tel" id="Telefono" name="Telefono" />
+                    <br />
                     <label for="Generos">Género</label>
-                    <input list="Genero" name="Genero" id="Generos">
+                    <input list="Genero" name="Genero" id="Generos" />
                     <datalist id="Genero">
-                        <option value="F">
-                        <option value="M">
+                        <option value="F"></option>
+                        <option value="M"></option>
                     </datalist>
-                    <br>
+
+                    <br />
                     <label for="F_Nacimiento">Fecha de nacimiento:</label>
-                    <input type="date" id="F_Nacimiento" name="F_Nacimiento">
+                    <input type="date" id="F_Nacimiento" name="F_Nacimiento" />
                 </form>
                 <button class="btn-selected form-btn">Eliminar cuenta</button>
                 <button class="btn-selected form-btn">Guardar Cambios</button>
@@ -65,5 +76,6 @@
         <footer>
             <h5 class="center">Todos los derechos reservados</h5>
         </footer>
-</body>
+        <script src="../js/profile.js"></script>
+    </body>
 </html>

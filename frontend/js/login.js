@@ -26,6 +26,8 @@ form.addEventListener("submit", function (e) {
 
     setTimeout(() => {
         if (dataArray.length > 0) {
+            const { cedula } = dataArray[0];
+            localStorage.setItem("user", cedula);
             window.location.href = "../index.html";
         } else {
             console.log("Usuario no encontrado");
