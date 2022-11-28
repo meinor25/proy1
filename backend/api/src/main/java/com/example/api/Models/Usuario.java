@@ -14,6 +14,13 @@ public class Usuario {
     public Usuario(String nombre) {
         this.nombre = nombre;
     }
+    // public Usuario(String nombre, String apellido, String correo, String
+    // direccion) {
+    // this.nombre = nombre;
+    // this.apellido = apellido;
+    // this.correo = correo;
+    // this.direccion = direccion;
+    // }
 
     public Usuario(String correo, String nombre, String direccion, String cedula, String apellido, String password) {
         this.correo = correo;

@@ -133,4 +133,24 @@ public class UsuariosDB {
         return null;
     }
 
+    // Registra un nuevo usuario
+    public int ModifyUser(Usuario crendentialUsuario) {
+        int result = 0;
+        try {
+            Statement stmt = _cn.createStatement();
+            String query = "exec p_update '"
+                    + crendentialUsuario.getCedula() + "', '"
+                    + crendentialUsuario.getNombre() + "', '"
+                    + crendentialUsuario.getApellido() + "', '"
+                    + crendentialUsuario.getCorreo() + "', '"
+                    + crendentialUsuario.getDireccion() + "'";
+            result = stmt.executeUpdate(query);
+            return result;
+
+        } catch (Exception e) {
+            System.out.println("Error" + e);
+        }
+        return result;
+    }
+
 }
