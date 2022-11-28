@@ -270,16 +270,17 @@ header nav #nav-logo-user {
 .crud {
     position: relative;
     width: 80%;
-    height: 500px;
+    height: 800px;
     left: 10%;
     top: 10px;
 }
-.crud h1 {
+.crud h1#Consulta {
     position: absolute;
-    top: 30px;
+    top: 360px;
     left: 50px;
     font-size: 37px;
 }
+/*
 .crud a {
     text-decoration: none;
     position: absolute;
@@ -296,6 +297,7 @@ header nav #nav-logo-user {
     font-size: 15px;
     top: 37px;
 }
+*/
 
 .contenido {
     border-collapse: collapse;
@@ -303,7 +305,7 @@ header nav #nav-logo-user {
     font-size: 17px;
     min-width: 400px;
     position: absolute;
-    top: 80px;
+    top: 400px;
     left: 10%;
 }
 
