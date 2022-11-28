@@ -7,9 +7,7 @@ const apellido = document.querySelector("#apellido");
 const cedula = document.querySelector("#cedula");
 const direccion = document.querySelector("#direccion");
 
-let estado = 0;
-
-form.addEventListener("submit", function (e) {
+form.addEventListener("submit", async function (e) {
     e.preventDefault();
     let body = {
         correo: correo.value,
@@ -19,21 +17,19 @@ form.addEventListener("submit", function (e) {
         cedula: cedula.value,
         direccion: direccion.value,
     };
-
-    fetch("http://localhost:8080/register", {
+    const resp = await fetch("http://localhost:8080/register", {
         method: "POST",
         body: JSON.stringify(body),
         headers: {
             "Content-type": "application/json",
         },
-    })
-        .then((res) => res.json())
-        .then((data) => (data = estado));
+    });
+    const data = await resp.json();
 
-    setTimeout(() => {
-        if ((estado = 1)) {
-            console.log("usuario registrado");
-            window.location.href = "login.html";
-        }
-    }, 1000);
+    if (data === 1) {
+        console.log("usuario registrado");
+        window.location.href = "login.html";
+    } else {
+        console.log(data);
+    }
 });
