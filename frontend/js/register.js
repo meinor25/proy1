@@ -27,7 +27,6 @@ form.addEventListener("submit", async function (e) {
     const data = await resp.json();
 
     if (data === 1) {
-        console.log("usuario registrado");
         window.location.href = "login.html";
     } else {
         console.log(data);

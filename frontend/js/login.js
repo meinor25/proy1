@@ -21,10 +21,10 @@ form.addEventListener("submit", async function (e) {
     data.forEach((element) => {
         dataArray.push(element);
     });
+
     const { cedula } = dataArray[0];
 
     if (dataArray.length > 0) {
-        console.log(cedula);
         localStorage.setItem("user", cedula);
         window.location.href = "../index.html";
     } else {
