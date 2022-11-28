@@ -298,7 +298,6 @@ header nav #nav-logo-user {
     top: 37px;
 }
 
-
 .contenido {
     border-collapse: collapse;
     margin: 26px 0;
@@ -1126,4 +1125,8 @@ footer h5 {
         font-size: 1.2rem;
         line-height: 1.8rem;
     }
+}
+
+.flex-container {
+    flex-wrap: wrap;
 }
