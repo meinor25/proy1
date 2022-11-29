@@ -15,7 +15,7 @@ public class UsuariosDB {
         _cn = new ConexionDB().Connect();
     }
 
-    // Trae informacion segun credenciales
+    // Loguea segun credenciales
     public List<Usuario> Login(Usuario crendentialUsuario) {
         try {
             Statement stmt = _cn.createStatement();
@@ -88,6 +88,7 @@ public class UsuariosDB {
         return null;
     }
 
+    // Obtiene una consulta por el nombre del cliente
     public List<Usuario> GetUserByName(Usuario name) {
         try {
             Statement stmt = _cn.createStatement();
@@ -110,6 +111,7 @@ public class UsuariosDB {
         return null;
     }
 
+    // Retorna las consultas
     public List<Usuario> GetConsultas() {
         try {
             Statement stmt = _cn.createStatement();
@@ -133,7 +135,7 @@ public class UsuariosDB {
         return null;
     }
 
-    // Registra un nuevo usuario
+    // Modifica un usuario
     public int ModifyUser(Usuario crendentialUsuario) {
         int result = 0;
         try {

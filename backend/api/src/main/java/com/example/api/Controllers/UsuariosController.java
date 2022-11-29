@@ -16,6 +16,7 @@ import com.example.api.Services.UsuariosDB;
 @RestController
 public class UsuariosController {
 
+    // Trae todas las consultas
     @CrossOrigin(origins = "http://127.0.0.1:5501")
     @GetMapping("/consultas")
     public List<Usuario> obtenerConsultas()
@@ -23,6 +24,7 @@ public class UsuariosController {
         return new UsuariosDB().GetConsultas();
     }
 
+    // Trae un usuario por su cedula
     @CrossOrigin(origins = "http://127.0.0.1:5501")
     @GetMapping("/user/{userID}")
     public List<Usuario> obtenerUsuario(@PathVariable("userID") String userID)
@@ -30,6 +32,7 @@ public class UsuariosController {
         return new UsuariosDB().GetUserByID(userID);
     }
 
+    // Trae las consultas por nombre
     @CrossOrigin(origins = "http://127.0.0.1:5501")
     @PostMapping("/consultas/nombre")
     public List<Usuario> obtenerUsuarioPorNombre(@RequestBody Usuario nombre)
@@ -37,18 +40,21 @@ public class UsuariosController {
         return new UsuariosDB().GetUserByName(nombre);
     }
 
+    // Maneja el login
     @CrossOrigin(origins = "http://127.0.0.1:5501")
     @PostMapping("/login")
     public List<Usuario> LogearUsuario(@RequestBody Usuario credentialsUsuario) throws ClassNotFoundException {
         return new UsuariosDB().Login(credentialsUsuario);
     }
 
+    // Registra un usuario
     @CrossOrigin(origins = "http://127.0.0.1:5501")
     @PostMapping("/register")
     public int RegistrarUsuario(@RequestBody Usuario credentialsUsuario) throws ClassNotFoundException {
         return new UsuariosDB().Register(credentialsUsuario);
     }
 
+    // Modifica un usuario
     @CrossOrigin(origins = "http://127.0.0.1:5501")
     @PutMapping("/user")
     public int obtenerUsuario(@RequestBody Usuario datosModificados)
