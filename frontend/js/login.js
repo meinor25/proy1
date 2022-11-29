@@ -1,10 +1,10 @@
 const form = document.querySelector("#form");
 const correo = document.querySelector("#correo");
 const password = document.querySelector("#password");
-let dataArray = [];
 
 form.addEventListener("submit", async function (e) {
     e.preventDefault();
+
     let body = {
         correo: correo.value,
         password: password.value,
@@ -18,13 +18,9 @@ form.addEventListener("submit", async function (e) {
     });
     const data = await resp.json();
 
-    data.forEach((element) => {
-        dataArray.push(element);
-    });
+    const { cedula } = data[0];
 
-    const { cedula } = dataArray[0];
-
-    if (dataArray.length > 0) {
+    if (data.length > 0) {
         localStorage.setItem("user", cedula);
         window.location.href = "../index.html";
     } else {

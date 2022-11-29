@@ -1,5 +1,4 @@
 let baseurl = "http://localhost:8080";
-let consultas = [];
 const button = document.querySelector("#buscar");
 const mostrar = document.querySelector("#mostrar");
 const input = document.querySelector("#search-input");
@@ -8,14 +7,12 @@ let contenedor = document.getElementById("T-Body");
 function getConsultas() {
     fetch(baseurl + "/consultas").then((res) => {
         res.json().then((json) => {
-            console.log(json);
-            consultas = json;
-            ImprimirConsultas();
+            ImprimirConsultas(json);
         });
     });
 }
 
-function ImprimirConsultas() {
+function ImprimirConsultas(consultas) {
     consultas.forEach(({ nombre, fecha_consulta, motivo_consulta, nombre_mascota }) => {
         contenedor.innerHTML += CrearConsulta(
             nombre,
@@ -44,8 +41,7 @@ function buscarConsulta(value) {
         },
     }).then((res) => {
         res.json().then((json) => {
-            consultas = json;
-            ImprimirConsultas();
+            ImprimirConsultas(json);
         });
     });
 }
@@ -61,6 +57,4 @@ mostrar.addEventListener("click", () => {
 });
 
 getConsultas();
-setTimeout(() => {
-    ImprimirConsultas();
-}, 1000);
+ImprimirConsultas();
